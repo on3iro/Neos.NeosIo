@@ -1,0 +1,27 @@
+'Neos.NeosConIo:Event':
+  superTypes:
+    'Neos.Neos:Document': true
+    'Neos.NeosConIo:Mixin.EventRelated': true
+  ui:
+    label: "Event"
+    icon: 'icon-calendar'
+    group: neoscon
+  properties:
+    uriPathSegment: false
+    EventDate:
+      type: DateTime
+      placeholder: 'Select a date...'
+      ui:
+        label: 'Event date'
+        inspector:
+          group: 'document'
+          editorOptions:
+            format: 'd.m.Y'
+    Location:
+      type: string
+      ui:
+        label: 'Location'
+        inspector:
+          group: 'document'
+          editorOptions:
+            placeholder: 'Event Location...'
